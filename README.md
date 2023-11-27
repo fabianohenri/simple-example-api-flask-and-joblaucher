@@ -23,4 +23,8 @@ http://0.0.0.0:8085/api/status
 ## Jobloaucher
 
 Esse é responsavel por fazer os processos automaticos. 
-Nesse caso configuramos no arquivo jobloacher.py
+Nesse caso configuramos no arquivo job_loacher.py
+```
+    # Roda o reset todos os dias a 03:00
+    scheduler.every().day.at("03:00").do(ClassFunction)
+```
